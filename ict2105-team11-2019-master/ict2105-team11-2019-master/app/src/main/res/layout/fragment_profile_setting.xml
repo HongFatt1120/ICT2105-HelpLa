@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profileView.ProfileSettingFragment"
+    android:id="@+id/profile_settings_fragment"
+    >
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_check_box_black_24dp"
+        />
+
+
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/app_bar">
+    </include>
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="60dp"
+        tools:context=".profileView.ProfileSettingFragment">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".profileView.ProfileSettingFragment">
+
+
+        <ImageView
+                android:id="@+id/profileImageView"
+                android:layout_width="124dp"
+                android:layout_height="113dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/user" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayoutTop"
+            tools:context=".profileView.ProfileSettingFragment">
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginBottom="40dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="40dp"
+                android:text="Name:" />
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginBottom="40dp"
+                android:paddingRight="20dp"
+
+                android:layout_below="@id/textViewName"
+                android:text="Email:" />
+
+            <TextView
+                android:id="@+id/textViewNewPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewEmail"
+                android:layout_marginStart="35dp"
+                android:layout_marginBottom="40dp"
+                android:paddingRight="50dp"
+                android:text="New \nPassword:" />
+
+            <TextView
+                android:id="@+id/textViewConfirmPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewNewPassword"
+                android:layout_marginStart="35dp"
+                android:layout_marginBottom="40dp"
+                android:paddingRight="50dp"
+                android:text="Confirm \nPassword:" />
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="56dp"
+                android:layout_toRightOf="@id/textViewName"
+
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:hint=""
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginLeft="55dp"
+                android:layout_below="@+id/editTextName"
+                android:layout_toRightOf="@id/textViewEmail"
+                android:ems="10"
+                android:layout_marginTop="20dp"
+                android:hint=""
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextNewPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextEmail"
+                android:layout_toRightOf="@+id/textViewNewPassword"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/editTextConfirmPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextNewPassword"
+                android:layout_toRightOf="@+id/textViewNewPassword"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:text="" />
+
+            <Button style="@style/Widget.AppCompat.Button.Colored"
+                android:id="@+id/buttonSave"
+                android:layout_below="@+id/editTextConfirmPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:text="Save"
+                />
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/custom_round_btn"
+            android:id="@+id/buttonlogout"
+
+            android:text="LOGOUT"/>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>
+

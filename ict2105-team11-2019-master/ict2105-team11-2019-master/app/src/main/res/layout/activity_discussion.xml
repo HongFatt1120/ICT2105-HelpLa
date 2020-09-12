@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chat.DiscussionActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"
+        ></include>
+
+    <TextView
+        android:id="@+id/textViewNameOfChatPerson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar"
+        android:text="TEST"
+        android:textSize="25sp"
+        android:background="@color/colorGrey"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutButtons"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/textViewNameOfChatPerson">
+        <Button
+            android:id="@+id/buttonAccept"
+            android:text="ACCEPT"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLightGrey"
+            android:textColor="@color/colorGreen"
+            >
+        </Button>
+        <Button
+            android:id="@+id/buttonReject"
+            android:text="REJECT"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/colorDarkerGrey"
+            android:textColor="@color/colorRed"
+            ></Button>
+        <Button
+            android:id="@+id/buttonReport"
+            android:text="REPORT"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/colorSliver"></Button>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvConversation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/form"
+        android:layout_below="@+id/linearLayoutButtons"
+        android:layout_marginTop="0dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:paddingBottom="10dp"
+        android:stackFromBottom="true"
+        android:text=""
+        android:transcriptMode="alwaysScroll" />
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="#91f1f1f1"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp">
+
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="252dp"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_alignTop="@+id/button1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/sendMessageButton"
+            android:layout_weight="0.72"
+            android:ems="10"
+            android:maxHeight="80dp"
+            android:padding="@dimen/edit_text_padding"/>
+
+        <Button
+            android:id="@+id/btnSendMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="Send"
+            android:background="@drawable/custom_round_btn"/>
+    </LinearLayout>
+
+</RelativeLayout>

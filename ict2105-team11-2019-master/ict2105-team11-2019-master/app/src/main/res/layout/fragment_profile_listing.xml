@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@color/colorGrey">
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingTop="15dp"-->
+        <!--android:paddingBottom="15dp"-->
+        <!--&gt;-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/item_img"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:layout_toRightOf="@id/item_img"-->
+            <!--android:id="@+id/item_title_tv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+            <!--android:text="Title"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:layout_toRightOf="@id/item_img"-->
+
+            <!--android:id="@+id/item_lastSeen_tv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/item_title_tv"-->
+            <!--android:text="location"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:layout_toRightOf="@id/item_img"-->
+
+            <!--android:id="@+id/item_status_tv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/item_lastSeen_tv"-->
+            <!--android:text="status"-->
+            <!--/>-->
+
+    <!--</RelativeLayout>-->
+
+    <androidx.cardview.widget.CardView
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:id="@+id/cardViewPost"
+        android:layout_gravity="center"
+        app:cardElevation="3dp"
+        android:layout_margin="4dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lostItemImg"
+                android:src="@drawable/img_placeholder"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lostItemTitle"
+                android:text="Title"
+                android:gravity="center_horizontal"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

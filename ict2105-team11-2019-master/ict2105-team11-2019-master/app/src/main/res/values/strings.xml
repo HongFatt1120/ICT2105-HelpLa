@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">HelpLa</string>
+    <string name="username_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login">Login</string>
+    <string name="register"><u>Not a user yet ? sign up!</u></string>
+    <string name="remember_me">Remember Me</string>
+    <string name="name_hint">Enter Name</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="registration">Register</string>
+
+    <string name="forgetPassword">Forget Password ? </string>
+    <string name="submit">Submit</string>
+    <string name="passcode">Passcode</string>
+    <string name="item">Enter Item Details</string>
+    <string name="button_Report">Report</string>
+    <string name="location">Location</string>
+    <string name="location_hint">Enter Location</string>
+    <string name="caseid_hint">Enter Case ID</string>
+    <string name="lastSeen_hint">Enter last Seen location</string>
+    <string name="item_name">Item Name</string>
+    <string name="lastSeen">Last Seen</string>
+    <string name="description">Description</string>
+    <string name="description_hint">Enter Description</string>
+    <string name="my_listing_title">My Listings</string>
+    <string name="ioweTitle">I owe:</string>
+    <string name="other_owe_me_title">Others owe me:</string>
+    <string name="case_id">Case ID</string>
+    <string name="eventTitle">Event Title</string>
+    <string name="eventTitle_hint">Enter Event Title</string>
+    <string name="start_time">Start Time</string>
+    <string name="start_time_hint">Enter Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="End_time_hint">Enter End Time</string>
+    <string name="button_create_event">Create Event</string>
+    <string name="chat">Chat</string>
+    <string name="google_maps_API_key">AIzaSyDOQPz7b1c-TCkNlQnWsfVYEplB5JY_05I</string>
+    <string name="shake">Want to HelpLa?\nShake your device for a Treasure Hunt!</string>
+    <string name="button_shake">Try me</string>
+    <string name="eventDetails">Event Details</string>
+    <string name="participants">Participants</string>
+    <string name="title_activity_maps">Map</string>
+
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

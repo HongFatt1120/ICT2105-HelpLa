@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_index"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_leadership"
+        android:icon="@drawable/ic_podium"
+        android:title="Leadership"
+        />
+    <item
+        android:id="@+id/nav_create"
+        android:icon="@drawable/ic_add_black_24dp"
+        android:title="Report"
+
+        />
+    <item
+        android:id="@+id/nav_notificaiton"
+        android:title="ShakeMe"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="Profile"
+        />
+</menu>

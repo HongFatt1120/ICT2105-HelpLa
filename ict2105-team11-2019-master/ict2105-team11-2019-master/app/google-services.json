@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "736048822230",
+    "firebase_url": "https://helpla-2d5f7.firebaseio.com",
+    "project_id": "helpla-2d5f7",
+    "storage_bucket": "helpla-2d5f7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736048822230:android:b9120c5ab9f48707",
+        "android_client_info": {
+          "package_name": "edu.singaporetech.admin.helpla"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "736048822230-l2f8qi7610mcnadi0b3d6d3lejnobcah.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTwfOrTcsxZZR9T8UsqVU0G_5nHbgygEs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736048822230:android:c8f2bd01f60938e7",
+        "android_client_info": {
+          "package_name": "edu.singaporetech.helpla"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "736048822230-l2f8qi7610mcnadi0b3d6d3lejnobcah.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTwfOrTcsxZZR9T8UsqVU0G_5nHbgygEs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

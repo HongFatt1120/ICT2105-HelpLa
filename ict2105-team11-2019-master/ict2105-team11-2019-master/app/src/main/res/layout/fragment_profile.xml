@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profileView.ProfileSettingFragment"
+    android:id="@+id/profile_fragment"
+    >
+    <!--<include-->
+    <!--layout="@layout/app_bar"-->
+    <!--android:id="@+id/app_bar">-->
+    <!--</include>-->
+
+    tools:context=".profileView.ProfileFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <include
+                    layout="@layout/app_bar_withicon"
+                    android:id="@+id/app_bar_withicon">
+                </include>
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context="profileView.ProfileFragment"
+                    android:paddingTop="60dp">
+
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profileImageView"
+                        android:layout_width="124dp"
+                        android:layout_height="113dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/user" />
+
+
+                    <TextView
+                        android:id="@+id/listing_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/profileImageView"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="50dp"
+                        android:gravity="center"
+                        android:text="My Listings"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="10dp"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/myListing_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/listing_tv">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+                    <TextView
+                        android:id="@+id/textViewName"
+                        android:layout_width="146dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="114dp"
+                        android:layout_toRightOf="@+id/profileImageView"
+                        android:text=""
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/textViewMyPoints"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Points:"
+                        android:textSize="15sp"
+                        android:layout_below="@+id/textViewName"
+                        android:layout_toRightOf="@+id/profileImageView"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/textViewPoints"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:text="10"
+                        android:textStyle="bold"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="100dp"
+                        android:layout_below="@+id/textViewName"
+                        />
+
+                    <TextView
+                        android:id="@+id/textViewClaim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Claim:"
+                        android:layout_below="@+id/textViewMyPoints"
+                        android:layout_toRightOf="@id/profileImageView"
+                        android:layout_marginTop="20dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/textViewOwe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/profileImageView"
+                        android:layout_below="@+id/textViewClaim"
+                        android:layout_marginTop="18dp"
+                        android:text="Owe:" />
+
+                    <Button
+                        android:id="@+id/claimBtn"
+                        android:layout_width="105dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="85dp"
+                        android:layout_marginEnd="29dp"
+                        android:text=" points"
+                        android:background="@drawable/custom_round_btn"/>
+
+                    <Button
+                        android:id="@+id/giveBtn"
+                        android:layout_width="105dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/claimBtn"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="29dp"
+                        android:layout_alignParentRight="true"
+                        android:text=" points"
+                        android:background="@drawable/custom_round_btn"/>
+
+
+                </RelativeLayout>
+            </FrameLayout>
+        </ScrollView>
+        <RelativeLayout
+            android:id="@+id/loadingRL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorGrey"
+            android:visibility="invisible"
+            >
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/load"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>
